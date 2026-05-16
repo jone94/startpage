@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>Start stránka</title>
+
+<style>
+    :root { color-scheme: dark; }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+        background: #111827;
+        color: white;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .grid {
+        width: 100%;
+        max-width: 520px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .tile {
+        min-width: 0;
+        text-decoration: none;
+        color: white;
+        background: #1f2937;
+        border-radius: 14px;
+        padding: 10px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1 / 1;
+        transition: transform 0.12s ease;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .tile:active { transform: scale(0.96); }
+
+    .icon {
+        width: clamp(30px, 9vw, 44px);
+        height: clamp(30px, 9vw, 44px);
+        border-radius: 11px;
+        margin-bottom: 7px;
+        object-fit: cover;
+        background: #374151;
+    }
+
+    .label {
+        width: 100%;
+        padding: 0 2px;
+        font-size: clamp(10px, 2.8vw, 13px);
+        text-align: center;
+        line-height: 1.15;
+        overflow-wrap: anywhere;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a class="tile" href="https://muj.monacobet.cz/profil/vklad" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=monacobet.cz&sz=128" alt="">
+<div class="label">Monaco vklad</div>
+</a>
+
+<a class="tile" href="https://www.synottip.cz/" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=synottip.cz&sz=128" alt="">
+<div class="label">Synottip</div>
+</a>
+
+<a class="tile" href="https://www.allwyn.cz/" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=allwyn.cz&sz=128" alt="">
+<div class="label">Sazka</div>
+</a>
+
+<a class="tile" href="https://www.tipsport.cz/" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=tipsport.cz&sz=128" alt="">
+<div class="label">Tipsport</div>
+</a>
+
+<a class="tile" href="https://www.chance.cz/" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=chance.cz&sz=128" alt="">
+<div class="label">Chance</div>
+</a>
+
+<a class="tile" href="https://www.maxa.cz/" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=maxa.cz&sz=128" alt="">
+<div class="label">Maxa</div>
+</a>
+
+<a class="tile" href="https://chatgpt.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128" alt="">
+<div class="label">ChatGPT</div>
+</a>
+
+<a class="tile" href="https://maps.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=maps.google.com&sz=128" alt="">
+<div class="label">Mapy</div>
+</a>
+
+<a class="tile" href="https://gmail.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=gmail.com&sz=128" alt="">
+<div class="label">Gmail</div>
+</a>
+
+<a class="tile" href="https://calendar.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=calendar.google.com&sz=128" alt="">
+<div class="label">Kalendář</div>
+</a>
+
+<a class="tile" href="https://news.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=news.google.com&sz=128" alt="">
+<div class="label">Zprávy</div>
+</a>
+
+<a class="tile" href="https://drive.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=drive.google.com&sz=128" alt="">
+<div class="label">Drive</div>
+</a>
+
+<a class="tile" href="https://translate.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=translate.google.com&sz=128" alt="">
+<div class="label">Překladač</div>
+</a>
+
+<a class="tile" href="https://duckduckgo.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=duckduckgo.com&sz=128" alt="">
+<div class="label">DuckDuckGo</div>
+</a>
+
+<a class="tile" href="https://seznam.cz" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=seznam.cz&sz=128" alt="">
+<div class="label">Seznam</div>
+</a>
+
+<a class="tile" href="https://idnes.cz" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=idnes.cz&sz=128" alt="">
+<div class="label">iDNES</div>
+</a>
+
+</div>
+
+</body>
+</html>
