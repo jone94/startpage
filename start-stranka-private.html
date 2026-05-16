@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Start stránka</title>
+
+<style>
+    :root {
+        color-scheme: dark;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111827;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .grid {
+        width: 95vw;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+
+    .tile {
+        text-decoration: none;
+        color: white;
+        background: #1f2937;
+        border-radius: 18px;
+        padding: 18px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        transition: transform 0.12s ease;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .tile:active {
+        transform: scale(0.96);
+    }
+
+    .icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        background: #374151;
+    }
+
+    .label {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.2;
+        word-break: break-word;
+    }
+
+    @media (max-width: 480px) {
+        .grid {
+            gap: 10px;
+        }
+
+        .label {
+            font-size: 12px;
+        }
+
+        .icon {
+            width: 46px;
+            height: 46px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a class="tile" href="https://google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=google.com&sz=128">
+<div class="label">Google</div>
+</a>
+
+<a class="tile" href="https://youtube.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=youtube.com&sz=128">
+<div class="label">YouTube</div>
+</a>
+
+<a class="tile" href="https://reddit.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=reddit.com&sz=128">
+<div class="label">Reddit</div>
+</a>
+
+<a class="tile" href="https://x.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=x.com&sz=128">
+<div class="label">X</div>
+</a>
+
+<a class="tile" href="https://wikipedia.org" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=wikipedia.org&sz=128">
+<div class="label">Wikipedia</div>
+</a>
+
+<a class="tile" href="https://github.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=github.com&sz=128">
+<div class="label">GitHub</div>
+</a>
+
+<a class="tile" href="https://chatgpt.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128">
+<div class="label">ChatGPT</div>
+</a>
+
+<a class="tile" href="https://maps.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=maps.google.com&sz=128">
+<div class="label">Mapy</div>
+</a>
+
+<a class="tile" href="https://gmail.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=gmail.com&sz=128">
+<div class="label">Gmail</div>
+</a>
+
+<a class="tile" href="https://calendar.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=calendar.google.com&sz=128">
+<div class="label">Kalendář</div>
+</a>
+
+<a class="tile" href="https://news.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=news.google.com&sz=128">
+<div class="label">Zprávy</div>
+</a>
+
+<a class="tile" href="https://drive.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=drive.google.com&sz=128">
+<div class="label">Drive</div>
+</a>
+
+<a class="tile" href="https://translate.google.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=translate.google.com&sz=128">
+<div class="label">Překladač</div>
+</a>
+
+<a class="tile" href="https://duckduckgo.com" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=duckduckgo.com&sz=128">
+<div class="label">DuckDuckGo</div>
+</a>
+
+<a class="tile" href="https://seznam.cz" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=seznam.cz&sz=128">
+<div class="label">Seznam</div>
+</a>
+
+<a class="tile" href="https://idnes.cz" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">
+<img class="icon" src="https://www.google.com/s2/favicons?domain=idnes.cz&sz=128">
+<div class="label">iDNES</div>
+</a>
+
+</div>
+
+</body>
+</html>
